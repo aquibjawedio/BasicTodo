@@ -106,12 +106,54 @@ main {
     gap: 1rem;
     transition: 0.5s;
     flex-direction: column;
+    position: relative;
 }
 
 /* Hero Section Designing */
 
 
+/* Create Task Popup */
 
+.createTaskPopup {
+    width: 270px;
+    height: fit-content;
+    padding: 3rem 2rem;
+    background-color: #00404b;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50%;
+    right: 40%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.task-title, .task-content {
+    width: 200px;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #000000;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
+
+.submit-task {
+    padding: 0.5rem 2rem;
+    background-color: #005160;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.task-title:focus, .task-content:focus, .submit-task:focus {
+    background-color: #008e32;
+    color: #f0f0f0;
+}
 
 
 
