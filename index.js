@@ -28,5 +28,15 @@ toggleSidebar.addEventListener('click', () => {
 
 
 
+// current date 
+
+const currentDate= document.querySelector('.currentDate');
+
+const date = new Date();
+currentDate.textContent = date.toDateString();
+
+
+
+
 
 
