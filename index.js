@@ -50,34 +50,63 @@ currentDate.textContent = date.toDateString();
 
 const addTask = document.querySelector('.addtask');
 const taskbar = document.querySelector('.taskbar');
+const createTaskPopup = document.querySelector('.createTaskPopup');
+
+
+addTask.addEventListener('click', () => {
+
+
+    if (createTaskPopup.style.visibility == 'hidden') {
+
+        createTaskPopup.style.visibility = 'visible'
+        // Fetching user input
+        let submitTask = document.querySelector('.submit-task');
+
+        submitTask.addEventListener('click', createNewTask);
+
+    } else {
+        createTaskPopup.style.visibility = 'hidden';
+    }
+    
+    taskTitle.value = '';
+    taskContent.value = '';
+})
+
+
+
+
 
 function createNewTask() {
-    const createTaskPopup = document.querySelector('.createTaskPopup');
-    createTaskPopup.style.visibility = 'hidden';
+
 
     let taskTitle = document.querySelector('.task-title').value;
     let taskContent = document.querySelector('.task-content').value;
-
-    if(!taskTitle.trim() || !taskContent.trim()) {
+    
+    if (!taskTitle.trim() || !taskContent.trim()) {
         alert("Plese enter a valid input");
-        return 
+        createTaskPopup.style.visibility = 'hidden';
+        return
     }
+    
+    createTaskPopup.style.visibility = 'hidden';
 
+
+    // Creating the parent div 'card' with attributes
     const card = document.createElement('div');
     card.classList.add('card');
     card.setAttribute('tabindex', '0');
 
-    // Create the card-details div
+    // Creating the card-details div
     const cardDetails = document.createElement('div');
     cardDetails.classList.add('card-details');
 
-    // Create the title paragraph
+    // Creating the title paragraph field
     const title = document.createElement('p');
     title.classList.add('text-title');
     title.textContent = taskTitle;
-    
 
-    // Create the task content
+
+    // Creating the task content field
     const content = document.createElement('p');
     content.classList.add('text-body');
     content.textContent = taskContent;
@@ -87,29 +116,15 @@ function createNewTask() {
     card.appendChild(cardDetails);
 
     taskbar.appendChild(card);
+
+
+    // Clearing the input field after submission
+
+    document.querySelector('.task-content').value = '';
+    document.querySelector('.task-title').value = '';
     return;
 
 }
-
-addTask.addEventListener('click', (event) => {
-
-    // event.preventDefault();
-
-    const createTaskPopup = document.querySelector('.createTaskPopup');
-
-    if (createTaskPopup.style.visibility == 'hidden') {
-        console.log("addTask clicked");
-        createTaskPopup.style.visibility = 'visible'
-
-        // Fetching user input
-        let submitTask = document.querySelector('.submit-task');
-
-        submitTask.addEventListener('click', createNewTask);
-
-    } else {
-        createTaskPopup.style.visibility = 'hidden';
-    }
-})
 
 
 
