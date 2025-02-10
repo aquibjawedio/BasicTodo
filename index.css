@@ -75,17 +75,25 @@ nav {
 
 
 
+<<<<<<< HEAD
 .currentDate, .section-heading {
+=======
+
+.currentDate {
+>>>>>>> 8909f2723036dd481f1035aebbb9d63a2846a1d2
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .section-heading {
     position: absolute;
     transform: translate(10%, 10%);
 }
+=======
+>>>>>>> 8909f2723036dd481f1035aebbb9d63a2846a1d2
 
 
 
@@ -216,9 +224,12 @@ main {
 
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 8909f2723036dd481f1035aebbb9d63a2846a1d2
 /* Sidebar  Designing*/
 
 
@@ -249,6 +260,7 @@ main {
     padding: 0.5rem 1rem;
 }
 
+<<<<<<< HEAD
 
 /* .today-task {
     color: #b10000;
@@ -256,6 +268,12 @@ main {
 } */
 
 
+=======
+.sidebar-menus li:hover {
+    color: #ffffff;
+    border-left: 4px solid #007bff;
+}
+>>>>>>> 8909f2723036dd481f1035aebbb9d63a2846a1d2
 
 
 
