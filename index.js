@@ -72,11 +72,6 @@ const closeTaskPopup = document.querySelector('.close-task-popup');
 closeTaskPopup.addEventListener('click', () => {
     createTaskPopup.style.visibility = 'hidden'
     console.log("close clicked");
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 8909f2723036dd481f1035aebbb9d63a2846a1d2
 })
 
 
@@ -144,7 +139,6 @@ function createNewTask() {
 
 // Sidebar Menus
 
-<<<<<<< HEAD
 const backlog = document.querySelector('.backlog');
 const completed = document.querySelector('.completed');
 
@@ -153,15 +147,6 @@ const backlogTask = document.querySelector('.backlog-task');
 const completedTask = document.querySelector('.completed-task');
 
 const sectionHeading = document.querySelector('.section-heading');
-=======
-const backlog= document.querySelector('.backlog');
-const completed = document.querySelector('.completed');
-
-const todayTask = document.querySelector('.today-task');
-const backlogTask= document.querySelector('.backlog-task');
-const completedTask = document.querySelector('.completed-task');
-
->>>>>>> 8909f2723036dd481f1035aebbb9d63a2846a1d2
 
 
 todayTask.addEventListener('click', () => {
@@ -174,7 +159,6 @@ todayTask.addEventListener('click', () => {
     completedTask.style.backgroundColor = 'transparent';
     addTask.style.visibility = 'visible';
 
-<<<<<<< HEAD
     todayTask.style.color = '#ffffff'
     completedTask.style.color = '#a1a1a1';
     backlogTask.style.color = '#a1a1a1';
@@ -185,11 +169,6 @@ todayTask.addEventListener('click', () => {
 
     sectionHeading.textContent = "Todays Task";
 
-=======
-    todayTask.style.borderLeft = '4px solid #007bff'
-    backlogTask.style.borderLeft = 'none'
-    completedTask.style.borderLeft = 'none'
->>>>>>> 8909f2723036dd481f1035aebbb9d63a2846a1d2
 });
 
 
@@ -204,7 +183,6 @@ backlogTask.addEventListener('click', () => {
     addTask.style.visibility = 'hidden';
     createTaskPopup.style.visibility = 'hidden';
 
-<<<<<<< HEAD
     backlogTask.style.color = '#ffffff'
     todayTask.style.color = '#a1a1a1'
     completedTask.style.color = '#a1a1a1'
@@ -215,11 +193,6 @@ backlogTask.addEventListener('click', () => {
 
     
     sectionHeading.textContent = "Backlog Tasks";
-=======
-    backlogTask.style.borderLeft = '4px solid #007bff'
-    todayTask.style.borderLeft = 'none'
-    completedTask.style.borderLeft = 'none'
->>>>>>> 8909f2723036dd481f1035aebbb9d63a2846a1d2
 });
 
 
@@ -235,7 +208,6 @@ completedTask.addEventListener('click', () => {
     addTask.style.visibility = 'hidden';
     createTaskPopup.style.visibility = 'hidden';
 
-<<<<<<< HEAD
     completedTask.style.color = '#ffffff'
     backlogTask.style.color = '#a1a1a1'
     todayTask.style.color = '#a1a1a1'
@@ -264,13 +236,6 @@ completedTask.addEventListener('click', () => {
     }
 )();
 
-=======
-    completedTask.style.borderLeft = '4px solid #007bff'
-    backlogTask.style.borderLeft = 'none'
-    todayTask.style.borderLeft = 'none'
-});
-
->>>>>>> 8909f2723036dd481f1035aebbb9d63a2846a1d2
 
 
 
