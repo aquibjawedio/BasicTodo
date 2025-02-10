@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <title>List - Items</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="taskcontrol">
+            <img src="assets/sidebarsvg.svg" width="24px" alt="" class="toggleSidebar">
+            <button class="addtask"> <img src="assets/addplus.svg" width="24px" alt="Add Task button">Add Task</button>
+            <p class="section-heading">Todays Task</p>
+            <p class="currentDate">Today 15th February</p>
+        </div>
+
+    </nav>
+
+
+
+    <main>
+        <section class="sidebar">
+
+            <ul class="sidebar-menus">
+                <li tabindex="0" class="today-task">Todays Task</li>
+                <li tabindex="0" class="backlog-task">Backlog Tasks</li>
+                <li tabindex="0" class="completed-task">Completed Tasks</li>
+            </ul>
+
+
+            <img src="./assets/settingicon.svg" width="20px" alt="settingicon" class=appsetting tabindex="0">
+
+        </section>
+
+
+        <section class="hero">
+
+
+            <!-- Task Creation Popup -->
+
+            <div class="createTaskPopup">
+                <label for="task-title">Task Title</label>
+                <input type="text" name="task-title" class="task-title">
+                <label for="task-content">Task Content</label>
+                <input type="text" name="task-content" class="task-content">
+                <button class="submit-task">Add</button>
+                <button class="close-task-popup">Close</button>
+            </div>
+
+
+            <!-- Taskbar Section -->
+            <div class="taskbar">
+                
+                <div class="card" tabindex="0">
+                    <div class="card-details">
+                        <p class="text-title">Morning Task</p>
+                        <p class="text-body">Have to walk 3.5KM and have to write a blog on html and css and the importants of JavaScript. I have to create a ui for a to do app. </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+
+            <!-- Backlog Section -->
+            <div class="backlog">
+                <div class="card" tabindex="0">
+                    <div class="card-details">
+                        <p class="text-title">Backlog Section</p>
+                        <p class="text-body">Have to walk 3.5KM and have to write a blog on html and css and the importants of JavaScript. I have to create a ui for a to do app. </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Completed Section -->
+            <div class="completed">
+                <div class="card" tabindex="0">
+                    <div class="card-details">
+                        <p class="text-title">Completed Section</p>
+                        <p class="text-body">Have to walk 3.5KM and have to write a blog on html and css and the importants of JavaScript. I have to create a ui for a to do app. </p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
